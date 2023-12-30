@@ -1,1 +1,12 @@
 /* BASIC STYLES HERE */
+.tower-img {
+    height: 5dhv;
+    object-fit: cover;
+    object-position: center;
+}
+
+.red-text {
+
+    color: red;
+
+}
