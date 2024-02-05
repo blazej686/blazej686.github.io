@@ -5,11 +5,71 @@
       <h1>Hello, I'm Blaze </h1>
       <h1>Full Stack Web Developer</h1>
       <p>Professional developer with a passion for learning new things and building useful apps.</p>
-      <button>My Portfolio</button>
-      <button>Contact Me</button>
+      <button class="btn btn-outline-primary" onClick="document.getElementById('portfolio').scrollIntoView();">My
+        Portfolio</button>
+      <button class="btn btn-outline-danger" onClick="document.getElementById('contact-form').scrollIntoView();">Contact
+        Me</button>
+      <div>
+        <a href="https://www.linkedin.com/in/blaze-jeppesen/" target=”_blank”>
+          <i class="mdi mdi-linkedin fs-1 ms-3"></i>
+        </a>
+
+        <a href="https://github.com/blazej686" target=”_blank”>
+          <i class="mdi mdi-github fs-1 ms-3"></i>
+        </a>
+
+      </div>
     </div>
+
     <div class="col-6">
-      <img class="img-fluid" src="/assets/img/Blaze-Jeppesen.jpg" alt="Blaze Jeppesen">
+      <img id="hero-img" class="img-fluid rounded mt-2" src="/assets/img/Blaze-Jeppesen.jpg" alt="Blaze Jeppesen">
     </div>
   </div>
+
+  <section id="portfolio" class="row">
+    <h2 class="text-dark">Apps I have made</h2>
+    <div class="col-12 col-md-6">
+      <a class="text-dark" target="_blank" href="https://keeper.blazejeppesen.com"><img
+          src="/assets/img/keeper-logo.png" alt="Keeper Logo"></a>
+
+      <p class="text-dark">Keeper Project</p>
+      <p class="text-dark">A project I made as the final in 12th of 13 week bootcamp course. It is built with Vue
+        on the frontend and .Net C# in the backend and a my SQL database. </p>
+    </div>
+    <div class="col-12 col-md-6">
+      <a target="_blank" href="https://tower.blazejeppesen.com"><img class="tower-img rounded"
+          src="/assets/img/Tower-Snip.png" alt="Tower Image"></a>
+      <p class="text-dark">Tower Project</p>
+      <p class="text-dark">This project was the midterm of sorts of the bootcamp and it is built with Vue on the
+        frontend and using a backend that is node and a MongoDb database. </p>
+
+    </div>
+
+  </section>
+
+  <section id="contact-form">
+    <div class="card my-2">
+      <img src="" alt="example" class="rounded-top">
+      <div class="card-body">
+        <div class="fs-4 fw-bold mb-3">
+          Get in touch!
+        </div>
+        <form class="contact-form" @submit.prevent="submitForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" required></textarea>
+          </div>
+          <button class="btn btn-outline-primary mt-2" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </div>

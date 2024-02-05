@@ -14,3 +14,7 @@
 .about {
     background-color: orange;
 }
+
+#hero-img {
+    height: 50dvh;
+}
