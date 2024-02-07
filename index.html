@@ -13,12 +13,13 @@
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>Blaze Jeppesen</title>
+
 </head>
 
 <body>
   <!-- SECTION -->
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light px-2">
+    <!-- <nav class="navbar navbar-dark navbar-expand bg-dark text-light px-2">
       <a class="navbar-brand" href="#">
         <img class="rounded-circle" src="https://ca.slack-edge.com/T1GGQN1RU-U05SU0E49QB-84edba11f068-48" height="45"
           alt="" loading="lazy">
@@ -32,6 +33,28 @@
 
       </div>
       <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
+    </nav> -->
+    <nav class="navbar sticky-top navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#/about"> <img class="rounded-circle"
+            src="https://ca.slack-edge.com/T1GGQN1RU-U05SU0E49QB-84edba11f068-48" height="45" alt=""
+            loading="lazy"><span class="p-2">Blaze Jeppesen</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+            <a class="nav-link" onClick="document.getElementById('skills').scrollIntoView();" href="#/about">My
+              Skills</a>
+            <a class="nav-link" onClick="document.getElementById('portfolio').scrollIntoView();" href="#/about">My
+              Applications</a>
+            <a class="nav-link " onClick="document.getElementById('contact-form').scrollIntoView();" href="#/about">Get
+              in Touch</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
