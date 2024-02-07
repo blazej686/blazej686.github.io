@@ -1,6 +1,6 @@
 /* BASIC STYLES HERE */
 .tower-img {
-    height: 5dhv;
+    height: 20dvh;
     object-fit: cover;
     object-position: center;
 }
@@ -17,4 +17,16 @@
 
 #hero-img {
     height: 50dvh;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+#ew-logo {
+    height: 15dvh;
+    object-fit: cover;
+    object-position: center;
 }
