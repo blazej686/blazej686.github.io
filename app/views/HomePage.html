@@ -1,6 +1,172 @@
-<div class="container-fluid bg-light">
+<div class="container-fluid bg-white">
+    <div class="row ">
+        <div class="col-6">
+            <p>Welcome to my Page</p>
+            <h1>Hello, I'm Blaze </h1>
+            <h1>Full Stack Web Developer</h1>
+            <p>Professional developer with a passion for learning new things and building useful apps.</p>
+            <p>I have a passion for computer coding and have thought about learning to code for most of my life and
+                finally decided to learn and went to a bootcamp and got my foundation in coding.
+            </p>
+            <button class="btn btn-outline-primary" onClick="document.getElementById('portfolio').scrollIntoView();">My
+                Portfolio</button>
+            <button class="btn btn-outline-danger"
+                onClick="document.getElementById('contact-form').scrollIntoView();">Contact
+                Me</button>
+            <div>
+                <a href="https://www.linkedin.com/in/blaze-jeppesen/" target=”_blank”>
+                    <i class="mdi mdi-linkedin fs-1 ms-3"></i>
+                </a>
 
-    <!-- About Me Section -->
+                <a href="https://github.com/blazej686" target=”_blank”>
+                    <i class="mdi mdi-github fs-1 ms-3"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="col-6">
+            <img id="hero-img" class="img-fluid rounded mt-2" src="/assets/img/Blaze-Jeppesen.jpg" alt="Blaze Jeppesen">
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+
+    <section class="row bg-primary text-light justify-content-center p-3" id="skills">
+        <div class="text-center">
+            <h2>My Skills</h2>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center bg-danger ">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>BootStrap</li>
+                <li>Vue.JS</li>
+                <li>.NET</li>
+                <li>MySQL</li>
+                <li>C#</li>
+                <li>Node</li>
+                <li>REST APIs</li>
+                <li>Git</li>
+                <li>CI/CD</li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-md-6 d-flex justify-content-center bg-danger ">
+            <ul>
+                <li>AWS</li>
+                <li>OOP</li>
+                <li>MVC</li>
+                <li>MongoDB</li>
+                <li></li>
+                <li>MySQL</li>
+                <li>C#</li>
+                <li>Node</li>
+                <li>REST APIs</li>
+                <li>Git</li>
+                <li>CI/CD</li>
+            </ul>
+
+
+    </section>
+
+    <section id="portfolio" class="row">
+        <h2 class="text-dark">Apps I have made</h2>
+        <div class="col-12 col-md-6">
+            <a class="text-dark" target="_blank" href="https://keeper.blazejeppesen.com"><img
+                    src="/assets/img/keeper-logo.png" alt="Keeper Logo"></a>
+
+            <p class="text-dark">Keeper Application</p>
+            <p class="text-dark">An application I made as the final in 12th of 13 week bootcamp course. It is built with
+                Vue
+                on the frontend and .Net C# in the backend and a my SQL database. </p>
+        </div>
+        <div class="col-12 col-md-6">
+            <a target="_blank" href="https://tower.blazejeppesen.com"><img class="tower-img rounded"
+                    src="/assets/img/fakeLogo.jpg" alt="Tower Image"></a>
+            <p class="text-dark">Tower Application</p>
+            <p class="text-dark">This application was the midterm of sorts of the bootcamp and it is built with Vue on
+                the
+                frontend and using a backend that is node and a MongoDb database. </p>
+
+        </div>
+
+        <div class="col-12 col-md-6">
+            <a class="text-dark" target="_blank" href="https://ew.strangkolby.com/"><img id="ew-logo"
+                    src="/assets/img/EW-Logo.png" alt="Endless Winter Logo"></a>
+
+            <p class="text-dark">Endless Winter Application</p>
+            <p class="text-dark">An application I made as a group in my bootcamp course. It is built with Vue
+                on the frontend and .Net C# in the backend and a my MongoDb database. It is still a work in progress as
+                there
+                are features to be added beyond the minimum viable product that is hosted here.</p>
+        </div>
+
+
+
+    </section>
+
+    <section id="contact-form" class=" ">
+        <div class="card my-2 p-2 ">
+            <img id="contact-img" src="/assets/img/Blaze-Jeppesen.jpg" alt="example" class="rounded ">
+            <div class="card-body">
+
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSemXKngoX8VkkNi8Re1N-FZ9vKWAdf39z_h8Po4pb28Bp54Zw/formResponse"
+                    target="_blank" id="bootstrapForm" method="POST">
+                    <fieldset>
+                        <h2>Get in Touch!<br><small></small></h2>
+                    </fieldset>
+
+
+                    <!-- Field type: "short" id: "1997968253" -->
+                    <fieldset>
+                        <legend for="1997968253">Name</legend>
+                        <div class="form-group">
+                            <input id="1320378973" type="text" name="entry.1320378973" class="form-control" required>
+                        </div>
+                    </fieldset>
+
+
+                    <!-- Field type: "short" id: "1059861938" -->
+                    <fieldset>
+                        <legend for="1059861938">Email Address</legend>
+                        <div class="form-group">
+                            <input id="961038920" type="text" name="entry.961038920" class="form-control" required>
+                        </div>
+                    </fieldset>
+
+
+                    <!-- Field type: "paragraph" id: "1630101674" -->
+                    <fieldset>
+                        <legend for="1630101674">Message</legend>
+                        <div class="form-group">
+                            <textarea id="1842197286" name="entry.1842197286" class="form-control" required></textarea>
+                        </div>
+                    </fieldset>
+
+                    <input type="hidden" name="fvv" value="1">
+                    <input type="hidden" name="fbzx" value="9152404203380677476">
+                    <!--
+          CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+          This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+          Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+          We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+      -->
+                    <input type="hidden" name="pageHistory" value="0">
+
+                    <button class="btn btn-outline-primary mt-2" type="submit">Submit <a
+                            href="javascript:close_window();"></a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!-- <div class="container-fluid bg-light">
+
+    About Me Section
 
     <section class="row justify-content-center bg-secondary p-3">
         <div class="col-6 about text-center rounded p-3">
@@ -10,7 +176,8 @@
             </p>
         </div>
     </section>
-    <!-- Skills Section -->
+
+    Skills Section
 
     <section class="row bg-primary text-light justify-content-center p-3">
         <div class="text-center">
@@ -50,7 +217,7 @@
 
     </section>
 
-    <!-- Apps I have Made -->
+    Apps I have Made
 
     <section class="row">
         <h2 class="text-dark">Apps I have made</h2>
@@ -76,10 +243,10 @@
     </section>
 
 
-    <!-- <a target="_blank" href="https://endlesswinter.strangkolby.com/">
+    <a target="_blank" href="https://endlesswinter.strangkolby.com/">
         <p class="red-text">
             This is link to a group site I worked on.
         </p>
-    </a> -->
+    </a>
 
-</div>
+</div> -->
