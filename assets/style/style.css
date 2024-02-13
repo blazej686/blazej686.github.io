@@ -30,3 +30,8 @@
     object-fit: cover;
     object-position: center;
 }
+
+#contact-img {
+    height: 20dhv;
+    width: 10dvw;
+}

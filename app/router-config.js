@@ -10,6 +10,7 @@ export const router = new Router([
   },
   {
     path: '#/about',
+    controllers: [HomeController],
     view: 'app/views/AboutView.html'
   }
 ])
