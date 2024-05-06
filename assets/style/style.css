@@ -1,22 +1,10 @@
 /* BASIC STYLES HERE */
-.tower-img {
-    height: 20dvh;
-    object-fit: cover;
-    object-position: center;
-}
 
-.red-text {
-
-    color: red;
-
-}
-
-.about {
-    background-color: orange;
-}
-
-#hero-img {
-    height: 50dvh;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f559a;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar {
@@ -25,13 +13,64 @@
     z-index: 1020;
 }
 
-#ew-logo {
-    height: 15dvh;
+.tower-img {
+    height: 20dvh;
     object-fit: cover;
     object-position: center;
 }
 
-#contact-img {
-    height: 20dhv;
-    width: 10dvw;
+.container-fluid {
+    padding: 50px 0;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+.hero-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.skills-section {
+    padding: 50px 0;
+}
+
+.skills-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-section {
+    padding: 50px 0;
+}
+
+.portfolio-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    padding: 50px 0;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
